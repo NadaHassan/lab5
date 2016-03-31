@@ -1,29 +1,26 @@
 var shoppingList = [
- var one = {
+  {
     name: 'apple',
-    price= 5.00,
+    price: 5.00
 },
- var two = {
+{
   name: 'banana',
-  price= 2.00,
+  price: 2.5
 },
-
- var three = {
+{
   name: 'pear',
-  price= 3.00,
+  price: 3.8
 },
-
- var four = {
+{
   name: 'orange',
-  price= 4.00,
+  price: 4.3
 }
 ];
+var total = 0;
 
-shoppingList.forEach(function(name and price){
-  console.log(name and price)
+shoppingList.forEach(function(element){
+  console.log(element.name + ' ...$' + element.price.toFixed(2));
+  total += element.price;
 });
 
-function total () {
-  (one.price + two.price + three.price + four.price)
-};
-console.log("Your total for your shopping list is $" + total)
+console.log("Your total for your shopping list is $" + total.toFixed(2));
